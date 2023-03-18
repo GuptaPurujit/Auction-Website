@@ -21,8 +21,8 @@ Here is a simple image to explain this architecture -
 #### Prerequisites
 1. You should have docker installed
 2. You should have nginx installed
-Run commands 
-`sudo service docker start`
+Run commands \
+`sudo service docker start` \
 `sudo service nginx start`
 
 #### Steps
