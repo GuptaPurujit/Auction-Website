@@ -31,13 +31,13 @@ Run commands \
 `cd Auction-Website`
 
 2. Build Docker Images\
-`docker build --tags registration-server registration-server` \
-`docker build --tags admin-server admin-server` \
-`docker build --tags auction-server auction-server`
+`docker build --tag registration-server --build-arg server_name=registration-server .` \
+`docker build --tag admin-server --build-arg server_name=admin-server .` \
+`docker build --tag auction-server --build-arg server_name=auction-server .`
 
 3. Run Docker Containers \
-`docker run -p 1111:8080 registration-server` \
-`docker run -p 2222:8080 admin-server` \
-`docker run -p 3333:8080 auction-server`
+`docker run -d -p 8080:8080 registration-server` \
+`docker run -d -p 8081:8080 admin-server` \
+`docker run -d -p 8082:8080 auction-server`
 
 4. Place the contents of [auction_server.conf](installables/auction-server.conf) present in installabes folder into __/etc/nginx/sites-enabled/__ using `vi auction-server` command
