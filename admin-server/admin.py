@@ -5,5 +5,9 @@ app = Flask(__name__)
 def fetch_admin_page():
     return 'Welcome to the admin page'
 
+@app.route('/login', methods=['GET'])
+def fetch_admin_page():
+    return 'Welcome to the login page'
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=8081, debug=True)
