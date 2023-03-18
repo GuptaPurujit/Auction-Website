@@ -13,7 +13,7 @@ This application is designed in a way that registration and homepage are on a si
 So Let's say Registration Server will run on port 8080, Admin Server will run on port 8081 and Auction Server will run on port 8082.
 We will be runnig nginx on port 81 which will route requests to the servers automatically.
 
-Here is a simple image to explain this architecture - 
+Here is a simple image to explain the architecture for this application- 
 ![Architecture Diagram](resources/architecture_diagram.PNG)
 
 
